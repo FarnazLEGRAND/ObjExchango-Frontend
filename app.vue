@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtPage />
+    
     <header>
 
       <div id="main" class="container-fluid text-center text-dark p-3 ">
@@ -13,6 +13,7 @@
         </nav>
     </div>  
 </header>
+<NuxtPage />
 <footer class="text-center text-white" style="background-color: #FAEE3A;">
    <div class="text-center text-dark p-3">
     © 2023 Copyright: Farnaz LEGRAND
