@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Objet } from "../entities";
+import { Objet, User } from "../entities";
 //const emit = defineEmits(['submitObjet'])
 const emit = defineEmits<{
   (e: 'submitObjet', objet: Objet): void
@@ -8,11 +8,11 @@ const emit = defineEmits<{
 const objet = ref<Objet>({
   title: '',
   description: '',
-  category: ''
-  owner:
-        ({_id:'',
-         } )
-
+  category: '',
+  owner: {
+    _id: '',
+    name: '',
+  }
 });
 
 function handleSubmit() {
@@ -22,7 +22,7 @@ function handleSubmit() {
 </script>
 
 <template>
-  <form @submit.prevent="handleSubmit()" enctype="multipart/form-data" class="col-6 mt-4" style="margin: auto"></form>
+  <form @submit.prevent="handleSubmit()" enctype="multipart/form-data" class="col-6 mt-4" style="margin: auto">
 
   <div class="group log-input">
     <label for="title">Title : </label>

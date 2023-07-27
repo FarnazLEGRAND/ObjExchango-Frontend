@@ -10,7 +10,7 @@
             <NuxtLink class="nav-link" to="/">Accueil</NuxtLink>
             <NuxtLink class="nav-link" to="/objet-list">Annonces</NuxtLink>
             <NuxtLink class="nav-link" to="/add-objet">Ajoutez une annonce</NuxtLink>
-            <NuxtLink class="nav-link" to="/objet-list">Liste emprunt</NuxtLink>     
+            <NuxtLink class="nav-link" to="/borrow-list">Liste emprunt</NuxtLink>     
         </nav>
         
     </div>  
