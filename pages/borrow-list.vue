@@ -17,7 +17,7 @@ async function addObjet(borrow: Borrow) {
 
     <!-- <Form @submitObjet="addOPbjet($event)"/> -->
 
-    <p v-for="item of data">{{ item.objet.title}}</p>
+    <!-- <p v-for="item of data">{{ item.objet.title}}</p> -->
     <!-- component adress -->
     <BorrowList v-for="item of data" :borrow="item" />
   </div>

@@ -11,7 +11,7 @@ const { data, refresh } = useFetch<Objet[]>('http://localhost:8000/api/objet');
 
     <!-- <Form @submitObjet="addOPbjet($event)"/> -->
 
-    <p v-for="item of data">{{ item.title }}</p>
+    <!-- <p v-for="item of data">{{ item.title }}</p> -->
     <!-- component adress -->
     <ObjetItem v-for="item of data" :objet="item" />
   </div>

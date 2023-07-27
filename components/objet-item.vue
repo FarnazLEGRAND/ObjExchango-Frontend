@@ -8,12 +8,16 @@ defineProps<{
 
 <template>
   <div>
-    <h3>
+    <div class="card mb-4" style="width: 18rem">
+    <div class="card-body">
+    <h3 class="card-title">
       <NuxtLink :to="'/objet/' + objet._id">{{ objet.title }}</NuxtLink>
     </h3>
-    <p>{{ objet.description }}</p>
-    <p>{{ objet.category }}</p>
+    <p class="card-text">{{ objet.description }}</p>
+    <p class="card-text">{{ objet.category }}</p>
+    <!-- <p>Owner:{{ objet.owner.name}}</p> -->
+  </div>
+  </div>
   </div>
 </template>
 
-<style scoped></style>

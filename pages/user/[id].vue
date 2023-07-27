@@ -1,16 +1,21 @@
+
 <script lang="ts" setup>
-import { User} from "../../entities";
+import { User } from "../../entities";
 
-const route = userRout();
+const route = useRoute();
 
-const { data } = userFetch<User>('http://localhost:8000/api/user/id/' + route.params.id);
+const { data } = useFetch<User>('http://localhost:8000/api/user/id/' + route.params.id);
 
 </script>
 
 <template>
   <div v-if="data">
-    <h3>{{ data.title }}</h3>
-    <p>Description : {{ data.description }}</p>
-    <p>Comment : {{ data.category }}</p>
+    <h3>{{ data.name }}</h3>
+    <p>email : {{ data.email }}</p>
+    <p>password : {{ data.password }}</p>
   </div>
 </template>
+
+
+
+

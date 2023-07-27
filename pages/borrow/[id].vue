@@ -14,5 +14,9 @@ const { data } = useFetch<Borrow >(
     <p>Accepted : {{ data.borrowDate }}</p>
     <p>Rendu : {{ data.returnDate }}</p>
     <p>Duration : {{ data. requestDate }}</p>
+    <p>borrower:{{ data.borrower.name }}</p>
   </div>
 </template>
+
+<!-- Rajouter un bouton accepter la requete de location: handle + formulaire -->
+<!-- Rajouter un bouton restituer l'objet: handle + formulaire -->
