@@ -3,13 +3,7 @@ import { Objet } from 'entities';
 //data . reflesh  pour relance,... il fait requet ver backend avec use fetch
 const { data, refresh } = useFetch<Objet[]>('http://localhost:8000/api/objet');
 
-async function addObjet(objet: Objet) {
-  await $fetch('http://localhost:8000/api/objet', {
-    method: 'POST',
-    body: objet
-  });
-  refresh();
-}
+
 </script>
 
 <template>
