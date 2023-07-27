@@ -6,6 +6,7 @@ export interface User {
 }
 
 export interface Objet {
+[x: string]: Objet;
     _id?:any;
     title:string;
     description:string;

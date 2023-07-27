@@ -9,7 +9,9 @@ const objet = ref<Objet>({
   title: '',
   description: '',
   category: ''
-  // owner: ''
+  owner:
+        ({_id:'',
+         } )
 
 });
 
