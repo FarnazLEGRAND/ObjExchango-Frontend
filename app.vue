@@ -8,9 +8,11 @@
         <nav class="nav my_nav" style="background-color: #FAEE3A;color;>
     color: rgb(0, 0, 0);">
             <NuxtLink class="nav-link" to="/">Accueil</NuxtLink>
-            <NuxtLink class="nav-link" to="/Article">Créer un article</NuxtLink>
-            <NuxtLink class="nav-link" to="/user">user</NuxtLink>   
+            <NuxtLink class="nav-link" to="/objet-list">Annonces</NuxtLink>
+            <NuxtLink class="nav-link" to="/add-objet">Ajoutez une annonce</NuxtLink>
+            <NuxtLink class="nav-link" to="/objet-list">Liste emprunt</NuxtLink>     
         </nav>
+        
     </div>  
 </header>
 <NuxtPage />
