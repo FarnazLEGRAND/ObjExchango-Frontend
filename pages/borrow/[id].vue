@@ -10,7 +10,7 @@ const { data } = useFetch<Borrow >(
 
 <template>
   <div v-if="data">
-    <h3>{{ data.user.name }}</h3>
+    <h3>{{ data.borrower._id }}</h3>
     <p>Accepted : {{ data.borrowDate }}</p>
     <p>Rendu : {{ data.returnDate }}</p>
     <p>Duration : {{ data. requestDate }}</p>
