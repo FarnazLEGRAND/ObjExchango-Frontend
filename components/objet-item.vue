@@ -20,4 +20,12 @@ defineProps<{
   </div>
   </div>
 </template>
+<style>
 
+.ard-title h3{
+  text-decoration: none;
+  color:#FAEE3A
+} 
+
+
+</style>

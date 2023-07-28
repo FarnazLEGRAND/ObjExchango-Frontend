@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Objet } from "../../entities";
+import { Objet, Borrow} from "../../entities";
 
 const route = useRoute();
 
@@ -39,9 +39,10 @@ const objet = ref<Objet>({
 
 // https://fr.wikipedia.org/wiki/Post-redirect-get
 async function handleBorrow() {
+  
   // 1. je cree le borrow correspondant a cet objet. 
   // pour ceci je vais faire un appel a l api
-  const response = await $fetch("http://localhost:8000/api/borrow/", {
+  const response = await $fetch<Borrow>("http://localhost:8000/api/borrow/", {
     // 2. une fois le borrow cree je redirige dessus en utilisant navigateTo. 
     // Son url sera /api/borrow/id
     "method": "POST",
@@ -53,9 +54,9 @@ async function handleBorrow() {
     },
     "objet":data.value}
   });
-
   await navigateTo('/borrow/' + response._id)
   // passing 'to' as a string
+
 };
 
 </script>
@@ -71,9 +72,14 @@ async function handleBorrow() {
     </div>
     <p>Owner:{{ data.owner.name }}</p>
     <form @submit.prevent="handleBorrow()" enctype="multipart/form-data" class="col-6 mt-4" style="margin: auto">
-      <button class="btn btn-primary">Borrow it</button>
+      <button class="btn btn-primary" style="background-color: #8cd2d0;">Borrow it</button>
     </form>
   </div>
 </template>
 
 
+<style>
+button{
+  color:#8cd2d0;
+}
+</style>

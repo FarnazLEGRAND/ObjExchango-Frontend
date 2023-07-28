@@ -17,7 +17,12 @@ async function addObjet(objet:Objet) {
 </template>
 
 <style >
-input[type="text"], input[type="email"], input[type="password"], textarea, select {
+
+button{
+    margin: 10px;;
+  background-color: #FAEE3A;
+}
+/* input[type="text"], input[type="email"], input[type="password"], textarea, select {
     background: transparent;
     border: none;
     font-family: "Montserrat";
@@ -30,10 +35,10 @@ input[type="text"], input[type="email"], input[type="password"], textarea, selec
     padding-right: 20px;
     text-transform: none;
     width: 100%;
-}
+} */
 
 input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + label {
-    color: #aaaaaa;
+    color: #F3F4F4;
     cursor: pointer;
     font-size: 9px;
     font-weight: 600;
@@ -41,6 +46,8 @@ input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + l
     padding-left: 10px;
     padding-top: 6px;
     position: relative;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
+
 </style>
+

@@ -5,8 +5,7 @@
 
       <div id="main" class="container-fluid text-center text-dark p-3 ">
   <img id="logo-main" src="../assets/img/ObjExchango.jpg" class="img-fluid logo">
-        <nav class="nav my_nav" style="background-color: #FAEE3A;color;>
-    color: rgb(0, 0, 0);">
+        <nav class="nav my_nav text-center " style="background-color: #FAEE3A; color: rgb(0, 0, 0);">
             <NuxtLink class="nav-link" to="/">Accueil</NuxtLink>
             <NuxtLink class="nav-link" to="/objet-list">Annonces</NuxtLink>
             <NuxtLink class="nav-link" to="/add-objet">Ajoutez une annonce</NuxtLink>
@@ -14,8 +13,12 @@
         </nav>
         
     </div>  
+  
 </header>
-<NuxtPage />
+<main>
+  <NuxtPage />
+</main>
+
 <footer class="text-center text-white" style="background-color: #FAEE3A;">
    <div class="text-center text-dark p-3">
     © 2023 Copyright: Farnaz LEGRAND
@@ -25,7 +28,14 @@
 </template>
 
 <style>
+main{
+  /* margin-top: -15px; */
+  /* background-color: #8BD2D1; */
+  background-color: #F3F4F4;
+
+}
 .my_nav {
+
     border-radius: 1px;
     height: 80px;
     margin: auto;
@@ -34,12 +44,15 @@
     justify-content: center;
 }
 .logo {
+  
     height: 300px;
     width: 300px;
-    background-color: #F7F8F8;
+    background-color:#F3F4F4;
 }
 .nav-link {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+
 </style>

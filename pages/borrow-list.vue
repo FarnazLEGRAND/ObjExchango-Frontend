@@ -23,4 +23,5 @@ async function addObjet(borrow: Borrow) {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

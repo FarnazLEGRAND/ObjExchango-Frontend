@@ -48,8 +48,9 @@ function handleSubmit() {
 </form></template>
 
 <style >
+
 input[type="text"], input[type="email"], input[type="password"], textarea, select {
-    background: transparent;
+ 
     border: none;
     font-family: "Montserrat";
     font-size: 12px;

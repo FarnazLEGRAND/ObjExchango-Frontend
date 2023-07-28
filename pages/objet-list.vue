@@ -17,4 +17,10 @@ const { data, refresh } = useFetch<Objet[]>('http://localhost:8000/api/objet');
   </div>
 </template>
 
-<style scoped></style>
+<style >
+h3{
+  text-decoration: none;
+  color:#8cd2d0;
+} 
+
+</style>
